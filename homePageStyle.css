@@ -1,9 +1,9 @@
 body{
-    background-color: #000000;
     background:
-    radial-gradient(ellipse at left top, #be84ce, transparent),
-    radial-gradient(ellipse at right top, #394c52, transparent),
-    radial-gradient(ellipse at center, #FFF, transparent)
+    radial-gradient(ellipse at left top, #71477c, transparent),
+    radial-gradient(ellipse at right top, #5c5c5c, transparent),
+    radial-gradient(ellipse at bottom right, #000000, transparent),
+    radial-gradient(ellipse at bottom left, #1f5b2e, transparent)
     ;
     height: 100vh;
 }
