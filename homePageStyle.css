@@ -1,0 +1,6 @@
+body{
+    background: 
+    radial-gradient(ellipse at left top, #000, transparent)
+    ;
+    height: 100vh;
+}
