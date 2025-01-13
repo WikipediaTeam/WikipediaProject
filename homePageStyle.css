@@ -6,8 +6,21 @@ body{
 }
 .header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header > div {
+    width: 200px;
 }
 
 .logo img{
     width: 156.358px;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.contact{
+    width: 156.358;
 }
