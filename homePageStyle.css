@@ -4,3 +4,10 @@ body{
     ;
     height: 100vh;
 }
+.header{
+    display: flex;
+}
+
+.logo img{
+    width: 156.358px;
+}
