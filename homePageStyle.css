@@ -54,3 +54,35 @@ body{
     height: 50px;
     background-color: white;
 }
+.flinks{
+    color: aliceblue;
+    align-content: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: solid;
+    
+}
+
+.flinks a:visited {
+color: aliceblue;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: end;
+    grid-template-rows: 100vh;
+}
+
+.appearance{
+    color: aliceblue;
+    display: grid;
+}
+
+.textTitle{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
