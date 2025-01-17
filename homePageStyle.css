@@ -1,6 +1,8 @@
 body{
     height: 100vh;
     background-color: gray;
+    margin: 0;
+    background-color: black;
 }
 .header{
     display: flex;
@@ -15,6 +17,7 @@ body{
     border-bottom: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    margin-top: 0;
 }
 .header > div {
     width: 200px;
@@ -36,5 +39,8 @@ body{
     width: 100px;
     height: 30px;
     border-radius: 20px;
-    background-color: rgb(93, 26, 26);
+    background:
+    radial-gradient(ellipse at left top, red, transparent) 
+    radial-gradient(ellipse at right bottom, red, transparent) 
+    ;
 }
