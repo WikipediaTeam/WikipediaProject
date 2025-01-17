@@ -1,16 +1,20 @@
 body{
+    height: 100vh;
+    background-color: gray;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background:
     radial-gradient(ellipse at left top, #71477c, transparent),
     radial-gradient(ellipse at right top, #5c5c5c, transparent),
     radial-gradient(ellipse at bottom right, #000000, transparent),
     radial-gradient(ellipse at bottom left, #1f5b2e, transparent)
     ;
-    height: 100vh;
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border-bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .header > div {
     width: 200px;
@@ -26,4 +30,11 @@ body{
 
 .contact{
     width: 156.358;
+}
+
+.button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(93, 26, 26);
 }
