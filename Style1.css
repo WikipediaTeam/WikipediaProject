@@ -5,19 +5,19 @@
 body{
     height: 100vh;
     margin: 0;
-    background-color: rgb(1, 1, 21);
+    background:
+    radial-gradient(ellipse at left top, #300d36, transparent),
+    radial-gradient(ellipse at right top, #000000, transparent),
+    radial-gradient(ellipse at bottom right, #5c5c5c, transparent),
+    radial-gradient(ellipse at bottom left, #300d36, transparent)
+    ;
+    background-repeat: no-repeat;
 }
 .header{
-    transform: translateY(-30vh);
-    animation: headGlide 2s ease 50ms 1 normal forwards;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:
-    radial-gradient(ellipse at left top, #71477c, transparent),
-    radial-gradient(ellipse at right top, #5c5c5c, transparent),
-    radial-gradient(ellipse at bottom right, #000000, transparent),
-    radial-gradient(ellipse at bottom left, #300d36, transparent)
+
     ;
     border-bottom: 0;
     border-bottom-left-radius: 10px;
@@ -104,9 +104,4 @@ color: aliceblue;
 
 .textContent img{
     width: 100px;
-}
-
-@keyframes headGlide {
-    from {transform: translateY( -30vh);}
-    to {transform: translateY(0vh);}
 }
