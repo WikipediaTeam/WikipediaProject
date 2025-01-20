@@ -1,9 +1,15 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 body{
     height: 100vh;
     margin: 0;
-    background-color: black;
+    background-color: rgb(1, 1, 21);
 }
 .header{
+    transform: translateY(-30vh);
+    animation: headGlide 2s ease 50ms 1 normal forwards;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,7 +17,7 @@ body{
     radial-gradient(ellipse at left top, #71477c, transparent),
     radial-gradient(ellipse at right top, #5c5c5c, transparent),
     radial-gradient(ellipse at bottom right, #000000, transparent),
-    radial-gradient(ellipse at bottom left, #1f5b2e, transparent)
+    radial-gradient(ellipse at bottom left, #300d36, transparent)
     ;
     border-bottom: 0;
     border-bottom-left-radius: 10px;
@@ -34,7 +40,7 @@ body{
     width: 156.358;
 }
 
-.button{
+.cButton{
     width: 100px;
     height: 30px;
     border-radius: 20px;
@@ -49,7 +55,7 @@ body{
     height: 50px;
     background-color: white;
 }
-.button{
+.aButton{
     width: 50px;
     height: 50px;
     background-color: white;
@@ -85,4 +91,22 @@ color: aliceblue;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.text{
+    color: white;
+}
+
+.textContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.textContent img{
+    width: 100px;
+}
+
+@keyframes headGlide {
+    from {transform: translateY( -30vh);}
+    to {transform: translateY(0vh);}
 }
