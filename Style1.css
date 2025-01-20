@@ -3,7 +3,6 @@
 }
 
 body{
-    height: 100vh;
     margin: 0;
     background:
     radial-gradient(ellipse at left top, #300d36, transparent),
@@ -62,11 +61,12 @@ body{
 }
 .flinks{
     color: aliceblue;
-    align-content: right;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: solid;
+    justify-content: space-between;
+    height: 55vh;
     
 }
 
@@ -78,7 +78,8 @@ color: aliceblue;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     justify-content: end;
-    grid-template-rows: 100vh;
+    grid-template-rows: 300vh;
+    
 }
 
 .appearance{
