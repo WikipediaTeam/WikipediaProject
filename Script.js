@@ -1,4 +1,4 @@
-let buttons = document.getElementsByClassName("changeButtons")
+let body = document.body
 let texts = document.getElementsByClassName("text")
 let head = document.head
 let contentOffset = document.getElementsByClassName("content")[0].offsetTop;
@@ -44,6 +44,7 @@ addEventListener("scroll", function(event){
 
 
 function clicke(c){
+    body.style.backgroundColor = "black"
     if(c === 'deepPurple'){
         head.innerHTML = "<meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><link rel='stylesheet' href='Style1.css'><script defer src='homepagescript.js' ></script><title>BadPedia</title>"
     } else if(c === 'lightSimple'){
