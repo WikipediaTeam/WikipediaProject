@@ -151,3 +151,6 @@ color: aliceblue;
     width: 100px;
 }
 
+.text a:visited {
+    color: aliceblue;
+    }
