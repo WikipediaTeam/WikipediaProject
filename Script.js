@@ -10,6 +10,22 @@ let parag;
 for(let i = 0; i < document.getElementsByClassName("paragraph").length; i++){
     para[i] = "paragraph" + (i+1) 
 }
+for(let i = 0; i < para.length; i++){
+    parag = document.getElementById(para[i]);
+    extra = 100
+    diff =  this.scrollY + this.window.innerHeight - parag.offsetTop - contentOffset;
+    if(scrollY + this.window.innerHeight > parag.offsetTop + extra - parag.offsetHeight + contentOffset && this.scrollY + this.window.innerHeight < parag.offsetTop + extra + contentOffset){
+        parag.style.opacity = (((extra)/(diff))**-1)
+    }
+    else if(scrollY + this.window.innerHeight > parag.offsetTop + extra - parag.offsetHeight + contentOffset)
+    {
+        parag.style.opacity = 1
+    }
+    else
+    {
+        parag.style.opacity = 0
+    }
+}
 addEventListener("scroll", function(event){
     
     for(let i = 0; i < para.length; i++){
