@@ -107,11 +107,9 @@ p{
     position: sticky;
     top: 180px;
     margin-top: 20px;
-    
-    
 }
 
-.flinks a:visited {
+.flinks a {
 color: aliceblue;
 }
 
@@ -119,7 +117,8 @@ color: aliceblue;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     justify-content: end;
-    grid-template-rows: 200vh;
+    grid-template-rows: fit-content;
+    padding-bottom: 200px;
     align-items: start;
     
 }
@@ -151,6 +150,19 @@ color: aliceblue;
     width: 100px;
 }
 
-.text a:visited {
+.text a{
     color: aliceblue;
-    }
+}
+
+.foot{
+    height: 200px;
+    background-color: #44424276;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.information{
+    transform: rotate(-30deg) translateX(-70px) translateY(100px);
+    position: absolute;
+}

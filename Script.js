@@ -26,6 +26,7 @@ for(let i = 0; i < para.length; i++){
         parag.style.opacity = 0
     }
 }
+
 addEventListener("scroll", function(event){
     
     for(let i = 0; i < para.length; i++){
@@ -38,10 +39,19 @@ addEventListener("scroll", function(event){
         else if(scrollY + this.window.innerHeight > parag.offsetTop + extra - parag.offsetHeight + contentOffset)
         {
             parag.style.opacity = 1
+            console.log(parag)
         }
         else
         {
             parag.style.opacity = 0
+        }
+
+        if(scrollY + 120 > parag.offsetTop - parag.offsetHeight + contentOffset && this.scrollY + 120 < + parag.offsetTop + contentOffset){
+            this.document.getElementsByClassName("flinks")[0].children[i].style.fontWeight = "990"
+        }
+        else
+        {
+            this.document.getElementsByClassName("flinks")[0].children[i].style.fontWeight = "400"
         }
     }
         // console.log("scroll: " + scrollY);
